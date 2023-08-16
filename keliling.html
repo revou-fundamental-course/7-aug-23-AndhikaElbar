@@ -2,31 +2,33 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="./js/script.js"></script>
 	<title>KaMpel</title>
 </head>
 <body>
 	<div class="header">
 		<h1>KaMpel (Kalkulator Simpel)</h1>
 	</div>
-	<div class="content">
-		<h1 style="text-align: center;">Selamat datang di KaMpel (Kalkulator Simpel)</h1>
+	<div class="container">
+		<h1 style="text-align: center; margin: 20px;">Selamat datang di KaMpel (Kalkulator Simpel)</h1>
 		<p style="text-align: center;">Halo nakama-tachi, selamat datang di KaMpel!</p>
 		<p style="text-align: center;">KaMpel adalah Kalkulator untuk kalian yang ingin simpel dan tidak mau repot :D</p><br>
 		<a class="button" href="luas.html">Klik disini untuk Menghitung Luas Segitiga</a>
 		<a class="button" href="keliling.html">Klik disini untuk Menghitung Keliling Segitiga</a>
-		<h1 style="text-align: center; margin: 10px;">Hitung Keliling Segitiga</h1>
-		<img src="segitiga.jpg">
-			<form>
+		<h1 style="text-align: center; margin: 20px;">Hitung Keliling Segitiga</h1>
+		<img src="segitiga1.jpg">
+			<form id="form">
 				<label>Input nilai sisi A:</label><br>
-				<input type="number" name="alas" value="sisiA"><br>
+				<input type="number" id="sisiA"><br>
 				<label>Input nilai sisi B:</label><br>
-				<input type="number" name="tinggi" value="sisiB"><br>
+				<input type="number" id="sisiB"><br>
 				<label>Input nilai sisi C:</label><br>
-				<input type="number" name="tinggi" value="sisiC"><br>
-					<input class="hitung-button" type="submit" name="hitung" value="Hitung">
+				<input type="number" id="sisiC"><br>
+					<button type="button" onclick="hitungKeliling()" class="hitung-button">Hitung</button>
+				<p id="hasilkeliling"></p>
 			</form>
-		<input class="reset-button" type="submit" name="reset" value="Reset">
+		<button type="button" onclick="resetKeliling()" class="reset-button">Reset</button>
 	</div>
 </body>
 </html>
