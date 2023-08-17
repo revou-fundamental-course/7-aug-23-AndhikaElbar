@@ -14,8 +14,41 @@
 		<h1 style="text-align: center; margin: 20px;">Selamat datang di KaMpel (Kalkulator Simpel)</h1>
 		<p style="text-align: center;">Halo nakama-tachi, selamat datang di KaMpel!</p>
 		<p style="text-align: center;">KaMpel adalah Kalkulator untuk kalian yang ingin simpel dan tidak mau repot :D</p><br>
-		<a class="button" href="luas.html">Klik disini untuk Menghitung Luas Segitiga</a>
-		<a class="button" href="keliling.html">Klik disini untuk Menghitung Keliling Segitiga</a>
+
+		<div class="luas">
+			<h1 style="text-align: center; margin: 20px;">Hitung Luas Segitiga</h1>
+			<img src="segitiga.jpg">
+				<div class="input-L">	
+					<form id="form-luas">
+						<label>Input nilai Alas:</label><br>
+						<input type="number" id="alas"><br>
+						<label>Input nilai Tinggi:</label><br>
+						<input type="number" id="tinggi"><br>
+							<button type="button" onclick="hitungLuas()" class="hitung-button">Hitung</button>
+						<p id="hasilluas"></p>
+						<button type="button" onclick="resetLuas()" class="reset-button">Reset</button>
+					</form>
+				</div>
+		</div>
+
+		<div class="keliling">
+			<h1 style="text-align: center; margin: 20px;">Hitung Keliling Segitiga</h1>
+			<img src="segitiga.jpg">
+				<div class="input-K">	
+					<form id="form-keliling">
+						<label>Input nilai sisi A:</label><br>
+						<input type="number" id="sisiA"><br>
+						<label>Input nilai sisi B:</label><br>
+						<input type="number" id="sisiB"><br>
+						<label>Input nilai sisi C:</label><br>
+						<input type="number" id="sisiC"><br>
+							<button type="button" onclick="hitungKeliling()" class="hitung-button">Hitung</button>
+						<p id="hasilkeliling"></p>
+						<button type="button" onclick="resetKeliling()" class="reset-button">Reset</button>
+					</form>
+				</div>
+		</div>
+
 	</div>
 </body>
 </html>

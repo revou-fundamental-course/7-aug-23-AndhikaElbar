@@ -10,6 +10,24 @@
 	padding: 20px;
 }
 
+.luas {
+	border-style: solid;
+	margin: 100px;
+	padding: 30px;
+	border-radius: 20px;
+	border-width: 2px;
+	border-color: #445069;
+}
+
+.keliling {
+	border-style: solid;
+	margin: 100px;
+	padding: 30px;
+	border-radius: 20px;
+	border-width: 2px;
+	border-color: #445069;
+}
+
 img {
 	width: 30%;
 	display: block;
@@ -31,35 +49,14 @@ input {
 	border-radius: 7px;
 }
 
-button {	
-	margin: 5px;
-	border-radius: 7px;
-}
-
-.button {
-	margin: auto;
-	display: block;
-	text-align: center;
-	margin-top: 20px;
-	width: 350px;
-	background-color: #769FCD;
-	border: none;
-	padding: 5px;
-	color: whitesmoke;
-	border-radius: 9px;
-	text-decoration-line: none;
-}
-
-.button:hover {
-	background-color: #4682A9;
-}
-
 .hitung-button {
 	width: 60px;
 	background-color: #769FCD;
 	border: none;
 	padding: 5px;
 	color: whitesmoke;
+	border-radius: 10px;
+	margin: 10px;
 }
 
 .hitung-button:hover {
@@ -74,6 +71,8 @@ button {
 	color: whitesmoke;
 	position: absolute;
 	right: 300px;
+	border-radius: 10px;
+	margin: 10px;
 }
 
 .reset-button:hover {
